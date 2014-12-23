@@ -1,0 +1,5 @@
+from client import *
+
+my_dash = dashing_client('162.209.75.138','3030','YOUR_AUTH_TOKEN')
+
+thing = my_dash.update_widget('welcome','title','hello me')
