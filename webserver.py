@@ -7,6 +7,7 @@ posts = db.posts
 
 @route('/posts')
 def all_posts():
+    '''Webserver currently does nothing more than check all the posts on a local mongo db installation and display them on port 8080'''
     posts_list = []
     for post in posts.find():
         posts_list.append('<h1>' + post['widget'] + '</h1>')
