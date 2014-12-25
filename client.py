@@ -2,7 +2,7 @@ import requests
 import json
 
 class dashing_client(object):
-    def __init__(self, host, port, token, secure=False):
+    def __init__(self, host, port='3030', token='YOUR_AUTH_TOKEN', secure=False):
         self.host = host
         self.port = port
         self.token = token
