@@ -5,7 +5,7 @@ import client
 connect = MongoClient()
 db = connect.dashboard
 posts = db.posts
-my_dashboard = client.dashing_client('162.209.75.138')
+my_dashboard = client.Dashing_Client('162.209.75.138')
 
 class Post(object):
     def __init__(self, widget, field_name, content):
