@@ -15,7 +15,7 @@ class Dashing_Client(object):
         
 
     def update_widget(self, widget, field_name, content):
-    '''Update widget at the dashing server you've connected to.\nUpdate single field name with content of your choice. Requests object is returned, no tests are carried out to ensure success'''
+        '''Update widget at the dashing server you've connected to.\nUpdate single field name with content of your choice. Requests object is returned, no tests are carried out to ensure success'''
         data = {"auth_token": self.token, 
                  field_name : content}
         headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
