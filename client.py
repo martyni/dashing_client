@@ -3,11 +3,12 @@ import json
 
 class Dashing_Client(object):
     '''Extendable simple class for connecting with a dashings instace.\nBy default you just need to provide the hostname/ip address to connect on default 3030 port with no configured authentication'''
-    def __init__(self, host, port='3030', token='YOUR_AUTH_TOKEN', secure=False):
+    def __init__(self, host, dashboard='sample', port='3030', token='YOUR_AUTH_TOKEN', secure=False):
         self.host = host
         self.port = port
         self.token = token
         self.secure = secure
+        self.dashboard = dashboard
         if secure:
             self.url = 'https://%s:%s/widgets/' % (host, port)
         else:
